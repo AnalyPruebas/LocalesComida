@@ -1,0 +1,78 @@
+[
+  {
+    "rol": 2,
+    "usuario": 2
+  },
+  {
+    "rol": 2,
+    "usuario": 3
+  },
+  {
+    "rol": 2,
+    "usuario": 11
+  },
+  {
+    "rol": 3,
+    "usuario": 8
+  },
+  {
+    "rol": 3,
+    "usuario": 6
+  },
+  {
+    "rol": 3,
+    "usuario": 16
+  },
+  {
+    "rol": 3,
+    "usuario": 14
+  },
+  {
+    "rol": 2,
+    "usuario": 4
+  },
+  {
+    "rol": 2,
+    "usuario": 8
+  },
+  {
+    "rol": 3,
+    "usuario": 1
+  },
+  {
+    "rol": 2,
+    "usuario": 14
+  },
+  {
+    "rol": 2,
+    "usuario": 15
+  },
+  {
+    "rol": 3,
+    "usuario": 5
+  },
+  {
+    "rol": 2,
+    "usuario": 10
+  },
+  {
+    "rol": 2,
+    "usuario": 11
+  },
+  {
+    "rol": 3,
+    "usuario": 13
+  },
+  {
+    "rol": 2,
+    "usuario": 7
+  },
+  {
+    "rol": 2,
+    "usuario": 16
+  },
+  {
+    "rol": 1,
+    "usuario": 17
+  }
+]

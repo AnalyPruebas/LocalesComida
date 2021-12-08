@@ -1,0 +1,113 @@
+[
+    {
+      "habilitado": false,
+      "empleado": 11,
+      "lugarComida": 14
+    },
+    {
+      "habilitado": false,
+      "empleado": 4,
+      "lugarComida": 17
+    },
+    {
+      "habilitado": true,
+      "empleado": 13,
+      "lugarComida": 2
+    },
+    {
+      "habilitado": true,
+      "empleado": 5,
+      "lugarComida": 14
+    },
+    {
+      "habilitado": false,
+      "empleado": 11,
+      "lugarComida": 4
+    },
+    {
+      "habilitado": false,
+      "empleado": 11,
+      "lugarComida": 3
+    },
+    {
+      "habilitado": false,
+      "empleado": 4,
+      "lugarComida": 1
+    },
+    {
+      "habilitado": true,
+      "empleado": 13,
+      "lugarComida": 7
+    },
+    {
+      "habilitado": false,
+      "empleado": 5,
+      "lugarComida": 8
+    },
+    {
+      "habilitado": false,
+      "empleado": 5,
+      "lugarComida": 15
+    },
+    {
+      "habilitado": false,
+      "empleado": 17,
+      "lugarComida": 6
+    },
+    {
+      "habilitado": false,
+      "empleado": 20,
+      "lugarComida": 15
+    },
+    {
+      "habilitado": true,
+      "empleado": 12,
+      "lugarComida": 16
+    },
+    {
+      "habilitado": false,
+      "empleado": 13,
+      "lugarComida": 4
+    },
+    {
+      "habilitado": true,
+      "empleado": 12,
+      "lugarComida": 10
+    },
+    {
+      "habilitado": true,
+      "empleado": 13,
+      "lugarComida": 4
+    },
+    {
+      "habilitado": false,
+      "empleado": 17,
+      "lugarComida": 14
+    },
+    {
+      "habilitado": true,
+      "empleado": 2,
+      "lugarComida": 1
+    },
+    {
+      "habilitado": true,
+      "empleado": 16,
+      "lugarComida": 12
+    },
+    {
+      "habilitado": false,
+      "empleado": 14,
+      "lugarComida": 1
+    },
+    {
+      "habilitado": true,
+      "empleado": 11,
+      "lugarComida": 7
+    },
+    {
+      "habilitado": true,
+      "empleado": 13,
+      "lugarComida": 6
+    }
+  ]
+

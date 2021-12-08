@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="row justify-content-center">
+    <div class="col-sm-6">
+      <h1> Lista de lugares de Comida</h1>
+    </div>
+  </div>
+
+  <div style="padding-top: 3rem" class="row justify-content-sm-end">
+    <div class="col-sm-3">
+      <button class="btn btn-info"> Crear</button>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 3rem">
+    <p-table [columns]="cols" [value]="arreglo"
+             [paginator]="true"
+             [rows]="3"
+             [lazy]="true"
+             (onLazyLoad)="cargarMasDatos($event)"
+             [totalRecords]="registrosTotales"
+    >
+      <ng-template pTemplate="header" let-columns>
+        <tr>
+          <th *ngFor="let col of columns">
+            {{col.header | titlecase}}
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-ciudadFila let-columns="columns">
+        <tr>
+          <td *ngFor="let col of columns">
+            <div *ngIf="col.header==='acciones'">
+              <button class="btn btn-block btn-info"
+              > Editar</button>
+            </div>
+            <div *ngIf="col.header==='espacio'">
+              {{ciudadFila[col.field]?'Cerrado': 'Abierto'}}
+            </div>
+            <div *ngIf="col.header==='estado'">
+              <button class="btn btn-block btn-success"
+                [ngClass]="{
+              'btn-success': ciudadFila[col.field] === 1,
+              'btn-danger':ciudadFila[col.field] === 0}"
+                      (click)="cambiarEstado(ciudadFila)"
+              >
+                {{ciudadFila[col.field] | estado}}
+              </button>
+            </div>
+            <div *ngIf="col.header!=='acciones' && col.header!=='estado'">
+              {{ciudadFila[col.field]}}
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+
+      <ng-template pTemplate="emptymessage" let-columns>
+        <tr>
+          <td [attr.colspan]="columns.length">
+            No hay registros
+          </td>
+        </tr>
+      </ng-template>
+
+    </p-table>
+  </div>
+
+
+</div>
+

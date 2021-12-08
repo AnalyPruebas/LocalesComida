@@ -1,0 +1,54 @@
+image: node:10.15.1
+
+before_script:
+  - cd locales-comid-back
+  - ls
+  - npm i
+  - cd ..
+  - cd locales-comida-api
+  - npm i
+
+stages:
+  - build-back
+  - test-back
+  - build-front
+#  - test-front
+  - build-front-prod
+
+ 
+build-back:
+  stage: build-back
+  only:
+    - proyecto
+  script:
+    - cd ../locales-comid-back
+    - npm run build
+
+lint-back:
+  stage: test-back
+  only:
+    - proyecto
+  script:
+    - cd ../locales-comid-back
+    - npm run lint
+
+build-front-normal:
+  stage: build-front
+  only:
+    - proyecto
+  script:
+    - npm run build
+
+build-front-prod:
+  stage: build-front-prod
+  only:
+    - proyecto
+  script:
+    - npm run build --prod
+
+#lint-front:
+#  stage: test-front
+#  only:
+#    - proyecto
+#  script:
+#    - npm run lint

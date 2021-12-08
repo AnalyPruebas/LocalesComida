@@ -1,0 +1,177 @@
+[
+    {
+      "menuCategoria": 3,
+      "producto": 4,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 3,
+      "producto": 6,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 8,
+      "producto": 5,
+      "proveedor": 7,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 7,
+      "producto": 2,
+      "proveedor": 1,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 2,
+      "producto": 4,
+      "proveedor": 4,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 8,
+      "producto": 2,
+      "proveedor": 6,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 5,
+      "proveedor": 6,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 3,
+      "producto": 4,
+      "proveedor": 4,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 5,
+      "producto": 2,
+      "proveedor": 4,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 16,
+      "producto": 4,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 1,
+      "producto": 1,
+      "proveedor": 1,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 3,
+      "proveedor": 2,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 7,
+      "producto": 1,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 4,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 2,
+      "producto": 4,
+      "proveedor": 2,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 15,
+      "producto": 2,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 5,
+      "proveedor": 3,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 13,
+      "producto": 6,
+      "proveedor": 2,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 11,
+      "producto": 3,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 7,
+      "producto": 4,
+      "proveedor": 7,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 1,
+      "producto": 5,
+      "proveedor": 4,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 1,
+      "producto": 3,
+      "proveedor": 5,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 15,
+      "producto": 6,
+      "proveedor": 7,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 1,
+      "producto": 3,
+      "proveedor": 7,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 1,
+      "producto": 2,
+      "proveedor": 6,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 1,
+      "proveedor": 3,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 16,
+      "producto": 4,
+      "proveedor": 7,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 11,
+      "producto": 5,
+      "proveedor": 3,
+      "cantidad": 20
+    },
+    {
+      "menuCategoria": 10,
+      "producto": 3,
+      "proveedor": 2,
+      "cantidad": 20
+    }
+  ]
+

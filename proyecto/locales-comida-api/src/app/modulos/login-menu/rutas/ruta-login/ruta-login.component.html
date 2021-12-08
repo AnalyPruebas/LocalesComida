@@ -1,0 +1,3 @@
+<app-login (usuario)="iniciarSesion($event)">
+  <button type="submit" [disabled]="!sesion" (click)="ingresar()" class="btn btn-block btn-sm btn-info"> Ingresar</button>
+</app-login>

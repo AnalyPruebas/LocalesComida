@@ -1,0 +1,8 @@
+<div *ngFor="let item of menuPrincipal" class="card" style="width: 18rem;">
+  <img [src]="item.img" class="card-img-top" alt="...">
+  <div class="card-body" align="center">
+    <h5 class="card-title">{{item.nombre}}</h5>
+    <p class="card-text">{{item.texto}}</p>
+    <a [routerLink]="item.ruta" class="btn btn-primary">{{item.nombre}}</a>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Vermouth",
+        "horaInicio": "09:00",
+        "horaFin": "12:00",
+        "habilitado": true
+    },
+    {
+        "nombre": "Almuerzo",
+        "horaInicio": "12:00",
+        "horaFin": "16:00",
+        "habilitado": true
+    },
+    {
+        "nombre": "Brunch",
+        "horaInicio": "14:00",
+        "horaFin": "16:00",
+        "habilitado": false
+    },
+    {
+        "nombre": "Nocturno",
+        "horaInicio": "16:00",
+        "horaFin": "22:00",
+        "habilitado": true
+    }
+]

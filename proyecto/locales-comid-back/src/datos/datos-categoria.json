@@ -1,0 +1,31 @@
+[
+    {
+      "nombre": "desayuno",
+      "habilitado": true
+    },
+    {
+      "nombre": "entrada",
+      "habilitado": false
+    },
+    {
+      "nombre": "postre",
+      "habilitado": false
+    },
+    {
+      "nombre": "entrada",
+      "habilitado": true
+    },
+    {
+      "nombre": "plato fuerte",
+      "habilitado": true
+    },
+    {
+      "nombre": "desayuno",
+      "habilitado": false
+    },
+    {
+      "nombre": "plato fuerte",
+      "habilitado": false
+    }
+  ]
+

@@ -1,0 +1,106 @@
+categ
+/*
+nombre: '{{random("desayuno","almuerzo", "merienda", "plato fuerte", "postre", "entrada")}}',
+    habilitado: '{{bool()}}',
+*/
+empleado
+
+/*
+[
+{
+  'repeat(15, 30)': {
+    nombre: '{{firstName()}} {{surname()}}',
+    identificacion (tags, parent, index){
+  const generarPrimerDigito = ()=>{
+      return Math.floor(Math.random() * (3 - 0) ) + 0;
+  };
+
+  const generarCeroANueve = ()=>{
+      return generarNumerosRandomicos(10, 0);
+  };
+
+  const generarUnoANueve = ()=>{
+      return generarNumerosRandomicos(10, 1);
+  };
+
+  const generarCeroACuatro = ()=>{
+      return generarNumerosRandomicos(5, 0);
+  };
+
+  const generarNumerosRandomicos = (max, min)=>{
+      return Math.floor(Math.random() * (max - min) ) + min;
+  };
+
+  const primerDigito = generarPrimerDigito();
+
+  let dosPrimerosDigitos;
+  switch(primerDigito){
+      case 0:
+          dosPrimerosDigitos = primerDigito.toString() + generarUnoANueve().toString();
+          break;
+      case 1:
+          dosPrimerosDigitos = primerDigito.toString() + generarCeroANueve().toString();
+          break;
+      case 2:
+          dosPrimerosDigitos = primerDigito.toString() + generarCeroACuatro().toString();
+          break;
+  }
+
+  const ochoDigitos = ()=>{
+      let digitos = '';
+      let numeroMaximo = 8;
+      while(numeroMaximo > 0){
+          digitos += generarCeroANueve().toString();
+          numeroMaximo--;
+      }
+      return digitos;
+  };
+
+  return ` ${dosPrimerosDigitos.toString()}${ochoDigitos().toString()}`;
+      js.map( (e) => {
+  e.identificacion_pais = e.identificacion_pais.replace(' ','');
+  return e;
+});
+
+},
+  }
+}
+]
+
+*/
+
+emple x lugar comi
+  /*
+   habilitado: '{{bool()}}',
+      empleado: '{{integer(1,28)}}',
+      lugarComida: '{{integer(1,17)}}',
+  */
+
+ datos lug comida
+   /*
+    nombre: '{{random("primavera","especial", "verano", "platos fuertes", "postres", "otoño", "bebidas", "ejecutivos")}}',
+       direccion: '{{street()}} y {{street()}}',
+       espacio: '{{integer(0,1)}}',
+       reservas: '{{bool()}}',
+       tipo: '{{integer(0,1)}}'
+
+   */
+
+   menu x categ
+     /*
+      nombre: 'Menu {{index()}}',
+         cantidad: '{{integer(20,100)}}',
+         precioUnitario: '{{floating(10, 40, 2, "0.0000")}}',
+         lugarComida: '{{integer(1,17)}}',
+         categoria: '{{integer(1,6)}}',
+         menu: '{{integer(1,7)}}',
+
+     */
+
+     prod-por-provee-para-menu
+       /*
+
+       menuPorCategoria: '{{integer(1,17)}}',
+           productos: '{{integer(1,6)}}',
+           proveedor: '{{integer(1,7)}}',
+       */

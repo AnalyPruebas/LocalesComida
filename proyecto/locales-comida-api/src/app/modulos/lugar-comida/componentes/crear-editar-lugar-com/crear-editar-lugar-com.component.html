@@ -1,0 +1,83 @@
+
+<form [formGroup]="formularioLugarComida"
+      novalidate
+>
+  <div class="form-group">
+    <label for="nombre"> Nombre</label>
+    <input type="text"
+           id="nombre"
+           [formControlName]="'nombre'"
+           class="form-control"
+           aria-describedby="nombreHelp"
+           placeholder="Ingrese nombre de restaurante"
+    >
+    <small id="nombreHelp" class="form-text"></small>
+    <div *ngIf="arregloMensajesErrorCampoNombre.length > 0" class="alert-warning">
+      <div *ngFor=" let mensajeError of arregloMensajesErrorCampoNombre">
+        <div> {{mensajeError}}</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="idioma"> Direccion</label>
+    <input
+      type="text"
+      id="idioma"
+      [formControlName]="'direccion'"
+      class="form-control"
+      aria-describedby="direccionHelp"
+      placeholder="Ingrese la direccion del restaurante"
+    >
+  </div>
+  <small id="direccionHelp" class="form-text"></small>
+  <div *ngIf="arregloMensajesErrorCampoDireccion.length > 0" class="alert-warning">
+    <div *ngFor=" let mensajeError of arregloMensajesErrorCampoDireccion">
+      <div> {{mensajeError}}</div>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="espacio"> Espacio</label>
+    <select
+    [formControlName]="'espacio'"
+    class="form-control"
+    id="espacio"
+  >
+    <option *ngFor="let espacio of espacios" [value]="espacio.id">
+      {{espacio.nombre}}
+    </option>
+  </select>
+  </div>
+
+  <div class="form-group">
+    <label for="tipo"> Tipo</label>
+    <select
+    [formControlName]="'tipo'"
+    class="form-control"
+    id="tipo"
+  >
+    <option *ngFor="let tipo of tipos" [value]="tipo.id">
+      {{tipo.nombre}}
+    </option>
+  </select>
+  </div>
+
+  <div *ngIf="!lugarComida" class="form-group">
+    <label for="reserva"> Admite reserva</label>
+    <select
+    [formControlName]="'reserva'"
+    class="form-control"
+    id="reserva"
+  >
+    <option value="true"> Si </option>
+    <option value="false"> No </option>
+  </select>
+  </div>
+
+  <ng-content></ng-content>
+
+</form>
+

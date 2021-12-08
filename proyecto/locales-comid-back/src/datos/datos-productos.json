@@ -1,0 +1,110 @@
+[
+    {
+      "nombre": "Papas",
+      "cantidad": 200,
+      "precioUnitario": "27.2800",
+      "proveedor": 21
+    },
+    {
+      "nombre": "Salchicha",
+      "cantidad": 200,
+      "precioUnitario": "20.0300",
+      "proveedor": 19
+    },
+    {
+      "nombre": "jugo de naranja",
+      "cantidad": 200,
+      "precioUnitario": "25.4900",
+      "proveedor": 5
+    },
+    {
+      "nombre": "pollo frito",
+      "cantidad": 200,
+      "precioUnitario": "36.3300",
+      "proveedor": 26
+    },
+    {
+      "nombre": "Dancity S.A",
+      "cantidad": 200,
+      "precioUnitario": "38.9800",
+      "proveedor": 5
+    },
+    {
+      "nombre": "carne frita",
+      "cantidad": 200,
+      "precioUnitario": "16.4400",
+      "proveedor": 26
+    },
+    {
+      "nombre": "helado",
+      "cantidad": 200,
+      "precioUnitario": "10.5500",
+      "proveedor": 12
+    },
+    {
+      "nombre": "gaseosa",
+      "cantidad": 200,
+      "precioUnitario": "11.9400",
+      "proveedor": 2
+    },
+    {
+      "nombre": "te helado",
+      "cantidad": 200,
+      "precioUnitario": "38.0200",
+      "proveedor": 22
+    },
+    {
+      "nombre": "Limonada",
+      "cantidad": 200,
+      "precioUnitario": "26.7200",
+      "proveedor": 24
+    },
+    {
+      "nombre": "gaseosa",
+      "cantidad": 200,
+      "precioUnitario": "31.4700",
+      "proveedor": 11
+    },
+    {
+      "nombre": "salsa inglesa",
+      "cantidad": 200,
+      "precioUnitario": "34.8700",
+      "proveedor": 26
+    },
+    {
+      "nombre": "salchichas",
+      "cantidad": 200,
+      "precioUnitario": "18.0500",
+      "proveedor": 6
+    },
+    {
+      "nombre": "sopa de pollo",
+      "cantidad": 200,
+      "precioUnitario": "21.3900",
+      "proveedor": 20
+    },
+    {
+      "nombre": "lasagna",
+      "cantidad": 200,
+      "precioUnitario": "39.9000",
+      "proveedor": 6
+    },
+    {
+      "nombre": "pollo",
+      "cantidad": 200,
+      "precioUnitario": "23.8500",
+      "proveedor": 14
+    },
+    {
+      "nombre": "carne",
+      "cantidad": 200,
+      "precioUnitario": "35.7300",
+      "proveedor": 11
+    },
+    {
+      "nombre": "papas",
+      "cantidad": 200,
+      "precioUnitario": "13.0600",
+      "proveedor": 8
+    }
+  ]

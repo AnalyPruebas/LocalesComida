@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>{{tituloModal}}</h1>
+<div mat-dialog-content>
+  <app-crear-editar-lugar-com [lugarComida]="_data" (lugarComidaCrearEditar)="crearEditar($event)"></app-crear-editar-lugar-com>
+  <!--  esto es un modalsito-->
+</div>
+<div class="row justify-content-end" mat-dialog-actions>
+  <div style="padding-left: 3rem">
+    <button (click)="cancelarModal()" class="btn btn-outline-dark"> Cancelar</button>
+  </div>
+  <div>
+    <button (click)="enviarDatosFormulario()" class="btn btn-info"> Aceptar</button>
+  </div>
+
+</div>
+

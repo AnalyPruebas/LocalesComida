@@ -1,0 +1,10 @@
+<div *ngIf="carrito">
+  <app-finalizar [arreglo]="carrito"></app-finalizar>
+</div>
+<div *ngIf="!carrito">
+  <app-comprar (pedidoCarrito)="pedidoCarrito($event)">
+    <!--  <button type="submit"> asdfg </button>-->
+  </app-comprar>
+</div>
+
+

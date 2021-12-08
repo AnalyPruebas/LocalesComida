@@ -1,0 +1,102 @@
+<div class="row">
+  <div class="row justify-content-center">
+    <div class="col-sm-12">
+      <h1> Lista de menus</h1>
+    </div>
+  </div>
+
+  <div style="padding-top: 3rem" class="row justify-content-sm-end">
+    <div class="col-sm-3">
+      <button (click)="finalizar()" class="btn btn-info"> Finalizar</button>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 3rem; padding-left: 3rem; padding-right: 3rem; width: 100%">
+    <p-dataView #dv [value]="arreglo" [paginator]="true" [rows]="5" paginatorPosition="bottom" filterBy="nombre"
+                [sortField]="sortField" [sortOrder]="ordenarDeForma">
+      <p-header>
+        <div class="ui-helper-clearfix">
+          <div class="ui-g">
+            <div class="ui-g-12 ui-md-4">
+              <p-dropdown [options]="opcionesOrdenamiento" [(ngModel)]="sortKey" placeholder="Ordenar por" (onChange)="onSortChange($event)" [style]="{'min-width':'140px'}"></p-dropdown>
+            </div>
+            <div class="ui-g-6 ui-md-4 filter-container">
+              <div style="position:relative">
+                <label>
+                  <input type="search" pInputText placeholder="Buscar por nombre" (keyup)="dv.filter($event.target.value)">
+                </label>
+              </div>
+            </div>
+            <div class="ui-g-6 ui-md-4" style="text-align:right">
+              <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+            </div>
+          </div>
+        </div>
+      </p-header>
+      <ng-template let-menu pTemplate="listItem">
+        <div class="ui-g" style="padding: 2em;border-bottom: 1px solid #d9d9d9">
+          <div class="ui-g-12 ui-md-2" style="text-align:center">
+            <!-- <img src="assets/showcase/images/demo/menu/{{menu.brand}}.png"> -->
+          </div>
+          <div class="ui-g-12 ui-md-6">
+            <div class="ui-g">
+              <div class="ui-g-12 ui-sm-6">Nombre: </div>
+              <div class="ui-g-10 ui-sm-6"><b>{{menu.nombre}}</b></div>
+
+              <div class="ui-g-12 ui-sm-6">Precio: </div>
+              <div class="ui-g-10 ui-sm-6"><b>{{menu.precioUnitario}}</b></div>
+
+              <div class="ui-g-6">Productos: </div>
+              <div *ngFor="let producto of menu['productosPorProveedorParaMenu']" class="ui-g-10">
+                Nombre: <b>{{producto['producto']['nombre']}}</b> Cantidad del menu: <b>{{producto['cantidad']}}</b>
+              Cantidad total: <b>{{producto['producto']['cantidad']}}</b>
+              </div>
+
+            </div>
+          </div>
+          <div class="ui-g-12 ui-md-1" style="align: center; padding-left: 35%">
+
+            <button pButton type="button" icon="pi pi-plus" (click)="sumarRestar($event, menu, 'sumar')"></button>
+            <button pButton type="button" icon="pi pi-search" (click)="selectCar($event, menu)"></button>
+            <button pButton type="button" icon="pi pi-minus" (click)="sumarRestar($event, menu, 'restar')"></button>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template let-menu pTemplate="gridItem">
+        <div style="padding:.5em" class="ui-g-12 ui-md-3">
+          <p-panel [header]="menu.nombre" [style]="{'text-align':'center'}">
+            <!--  <img src="assets/showcase/images/demo/menu/{{menu.brand}}.png" width="60"> -->
+            <div class="menu-detail">Precio:  {{menu.precioUnitario}}</div>
+            <hr class="ui-widget-content" style="border-top:0">
+            <button pButton type="button" icon="pi pi-search" (click)="selectCar($event, menu)" style="margin-top:0"></button>
+          </p-panel>
+        </div>
+      </ng-template>
+    </p-dataView>
+
+    <p-dialog header="Detalles del menú" [(visible)]="displayDialog"  [responsive]="true" showEffect="fade" [modal]="true" [style]="{width: '225px'}"  (onAfterHide)="onDialogHide()">
+      <div class="ui-g" *ngIf="menuSeleccionado">
+        <div class="ui-g-10" style="text-align:center">
+          <!-- <img src="assets/showcase/images/demo/menu/{{selectedCar.brand}}.png"> -->
+        </div>
+        <div class="ui-g-4">Categoria: </div>
+        <div class="ui-g-10">{{menuSeleccionado.categoria.nombre}}</div>
+
+        <div class="ui-g-4">Nombre: </div>
+        <div class="ui-g-10">{{menuSeleccionado.nombre}}</div>
+
+
+       <!-- <div class="ui-g-4">Productos: </div>
+        <div class="ui-g-10">{{menuSeleccionado.productosPorProveedorParaMenu.producto | json}} </div>-->
+
+        <div class="ui-g-4">Productos: </div>
+        <div *ngFor="let producto of productosMenu" class="ui-g-10">Nombre: {{producto['producto']['nombre']}} Cantidad: {{producto['cantidad']}}</div>
+
+
+      </div>
+    </p-dialog>
+  </div>
+
+</div>
+
+<ng-content></ng-content>
